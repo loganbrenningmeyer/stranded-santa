@@ -11,4 +11,10 @@ Converts latitude and longitude cooridinates of the [40 highest populated cities
 
 Routes were drawn based on cities' general proximity to each other. Each city has roughly 3-5 connections to adjacent cities.
 
-##
+## Finding the Shortest Path
+Using the network of routes we determined, we can construct a graph. The graph is implemented as a dictionary where the keys are the cities ("City, Country"), and the values are dictionaries containing adjacent cities and the distance to them ("City, Country" : 5).
+
+With the graph, we can determine the shortest path to other cities from the origin city using Djikstra's algorithm. The program begins at the origin city, moving onto the nearest of its neighboring cities, keeping track of the shortest paths found so far from the source city to other nodes. The program continues to check every neighbor of every node, ultimately determining the shortest possible path of all paths from the origin city to the destination.
+
+## Animating Path
+
