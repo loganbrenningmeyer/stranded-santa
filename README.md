@@ -12,9 +12,11 @@ Converts latitude and longitude cooridinates of the [40 highest populated cities
 Routes were drawn based on cities' general proximity to each other. Each city has roughly 3-5 connections to adjacent cities.
 
 ## Finding the Shortest Path
-Using the network of routes we determined, we can construct a graph. The graph is implemented as a dictionary where the keys are the cities ("City, Country"), and the values are dictionaries containing adjacent cities and the distance to them ("City, Country" : 5).
+Using the network of routes we determined, we can construct a graph. The graph is implemented as a dictionary where the keys are the cities ("City, Country"), and the values are dictionaries containing adjacent cities and the distance to them {"City, Country" : 5}.
 
 With the graph, we can determine the shortest path to other cities from the origin city using Djikstra's algorithm. The program begins at the origin city, moving onto the nearest of its neighboring cities, keeping track of the shortest paths found so far from the source city to other nodes. The program continues to check every neighbor of every node, ultimately determining the shortest possible path of all paths from the origin city to the destination.
 
 ## Animating Path
+By plotting cities and landmasses using the Earth's real latitude and longitude, we were able to use latitude and longitude values to rotate matplotlib's camera in order to keep cities centered on the plot. For instance, to center Tokyo whose $latitude = 139.69°$ and $longitude = 35.69°$, set matplotlib's camera azimuth rotation to 139.69° and elevation to 35.69°.
 
+We decided to set the movement between each city to be 10 frames long, meaning the change in rotation from frame to frame can be found simply by dividing the distance between two cities by 10. By incrementing by this amount each frame, the simulated path remains centered on the camera while moving between the origin and destination.
