@@ -18,8 +18,8 @@ Using the network of routes we determined, we can construct a graph. The graph i
 
 With the graph, we can determine the shortest path to other cities from the origin city using Djikstra's algorithm. The program begins at the origin city, moving onto the nearest of its neighboring cities, keeping track of the shortest paths found so far from the source city to other cities. The program continues to check every neighbor of every city, ultimately determining the shortest possible path of all paths from the origin city to the destination.
   - The graph is sparse, containing 40 vertices (cities) and 54 edges (routes). 
-  - With our graph implementation, Djikstra's algorithm has a time complexity of $O(V^2)$
-    - Could be improved to $O(E * log(V))$ with the use of a min heap
+  - With our graph implementation, Djikstra's algorithm has a time complexity of $O(V^2)$.
+    - Could be improved to $O(E * log(V))$ with the use of a min heap.
 
 ## Animating Path
 By plotting cities and landmasses using the Earth's real latitude and longitude, we were able to use latitude and longitude values to rotate matplotlib's camera in order to keep cities centered on the plot. For instance, to center Tokyo whose $latitude = 139.69°$ and $longitude = 35.69°$, set matplotlib's camera azimuth rotation to 139.69° and elevation to 35.69°.
