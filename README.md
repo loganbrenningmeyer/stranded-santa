@@ -6,7 +6,7 @@ This program determines the shortest path between two given cities and animates 
 <img src=https://media.giphy.com/media/KgBosvIkQs7al4TVXx/giphy.gif width=50%>
 
 ## City/Route Plotting
-Converts latitude and longitude coordinates of the [40 highest populated cities](https://en.wikipedia.org/wiki/List_of_largest_cities) to (x,y,z) coordinates using these conversion formulas:
+Converts latitude and longitude coordinates of the [40 highest populated cities](https://en.wikipedia.org/wiki/List_of_largest_cities) to (x,y,z) coordinates using these conversion formulas (where R = 6378.1km, Earth's radius):
   - $x = R * cos(lat) * cos(long)$
   - $y = R * cos(lat) * sin(long)$
   - $z = R * sin(lat)$
