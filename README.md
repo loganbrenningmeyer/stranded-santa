@@ -2,6 +2,7 @@
 
 Santa is stranded! His sleigh is in the workshop and now he must deliver presents on foot. 
 This program determines the shortest path between two given cities and animates the journey between them.
+![StrandedSanta](https://media.giphy.com/media/KgBosvIkQs7al4TVXx/giphy.gif)
 
 ## City/Route Plotting
 Converts latitude and longitude cooridinates of the [40 highest populated cities](https://en.wikipedia.org/wiki/List_of_largest_cities) to (x,y,z) coordinates using these conversion formulas:
