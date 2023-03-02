@@ -1,4 +1,5 @@
 # Stranded Santa
+## Mizzou Hackathon 2022
 
 Santa is stranded! His sleigh is in the workshop and now he must deliver presents on foot. 
 This program determines the shortest path between two given cities and animates the journey between them so Santa can deliver presents on time.
